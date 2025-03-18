@@ -1,5 +1,26 @@
 # Personalize Anything for Free with Diffusion Transformer
 
+```bash
+sudo apt-get update && sudo apt-get install git-lfs ffmpeg cbm
+
+conda create --name person python=3.10
+conda activate person
+pip install ipykernel
+python -m ipykernel install --user --name person --display-name "person"
+
+git clone https://github.com/svjack/personalize-anything.git
+cd personalize-anything
+
+pip install torch torchvision
+pip install -r requirements.txt
+
+huggingface-cli login
+
+python gradio_demo.py
+```
+
+### nainly try notebook
+
 ## 🏠 [Project Page](https://fenghora.github.io/Personalize-Anything-Page/) | [Paper](https://arxiv.org/abs/2503.12590)
 
 ![teaser](assets/teaser.png)
